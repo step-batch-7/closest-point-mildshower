@@ -16,7 +16,7 @@ double find_distance(point point1, point point2)
   return sqrt(pow((point1.x - point2.x), 2) + pow((point1.y - point2.y), 2));
 }
 
-void get_closest_food(point food_points[], int points_length, point current_location, point_ptr closest_food_location)
+void get_closest_food(point_list food_points, int points_length, point current_location, point_ptr closest_food_location)
 {
   *closest_food_location = FIRST_ELEMENT(food_points);
   double closest_food_distance = find_distance(current_location, *closest_food_location), current_distance;

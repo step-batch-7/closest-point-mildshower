@@ -27,8 +27,8 @@ typedef struct
 typedef point *point_ptr;
 typedef point point_list[];
 
-void print_current_and_food_location(point, point);
+void print_current_and_food_location(point current_location, point food_location);
 
-double find_distance(point, point);
+double find_distance(point point1, point point2);
 
 void get_closest_food(point_list food_points, int points_length, point current_location, point_ptr closest_food_location);

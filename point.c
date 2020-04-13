@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include "point.h"
 
-int find_manhattan_distance(struct Point point1, struct Point point2)
+int find_manhattan_distance(point point1, point point2)
 {
   return abs(point1.x - point2.x) + abs(point1.y - point2.y);
 }
 
-void get_closest_food(struct Point food_points[], int points_length, struct Point current_location, struct Point *closest_food_location)
+void get_closest_food(point food_points[], int points_length, point current_location, point *closest_food_location)
 {
   *closest_food_location = food_points[0];
 

@@ -16,7 +16,7 @@ Location of organism: [36 27],  Closest food target : [55 38]
 #define PRINT_POINT(p) printf("[%d %d]", p.x, p.y)
 #define PRINT_NEW_LINE printf("\n")
 #define FIRST_ELEMENT(arr) arr[0]
-#define POINTS_LIST_LENGTH(p_list) sizeof(p_list) / sizeof(point)
+#define ARRAY_LENGTH(arr) sizeof(arr) / sizeof(arr[0])
 
 typedef struct
 {

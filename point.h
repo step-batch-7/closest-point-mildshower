@@ -18,6 +18,6 @@ typedef struct
   int y;
 } point;
 
-int find_manhattan_distance(point, point);
+double find_distance(point, point);
 
 void get_closest_food(point food_points[], int points_length, point current_location, point *closest_food_location);

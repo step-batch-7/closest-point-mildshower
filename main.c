@@ -3,12 +3,13 @@
 
 int main(void)
 {
-  point food_points[5] = {{18, 76}, {19, 66}, {89, 57}, {9, 71}, {55, 38}}, closest_food_location;
-  point current_locations[5] = {{18, 86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}};
+  point_list food_points = {{18, 76}, {19, 66}, {89, 57}, {9, 71}, {55, 38}};
+  point_list current_locations = {{18, 86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}};
+  point closest_food_location;
 
-  for (int index = 0; index < 5; index++)
+  for (int index = 0; index < POINTS_LIST_LENGTH(current_locations); index++)
   {
-    get_closest_food(food_points, 5, current_locations[index], &closest_food_location);
+    get_closest_food(food_points, POINTS_LIST_LENGTH(food_points), current_locations[index], &closest_food_location);
     print_current_and_food_location(current_locations[index], closest_food_location);
   }
 

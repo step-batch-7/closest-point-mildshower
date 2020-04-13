@@ -9,7 +9,7 @@ int main(void)
   for (int index = 0; index < 5; index++)
   {
     get_closest_food(food_points, 5, curr_locations[index], &closest_food_location);
-    printf("Location of organism: [%d %d],  Closest food target : [%d %d]\n", curr_locations[index].x, curr_locations[index].y, closest_food_location.x, closest_food_location.y);
+    print_curr_and_food_location(curr_locations[index], closest_food_location);
   }
 
   return 0;

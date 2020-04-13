@@ -12,11 +12,17 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
+
+#define PRINT_POINT(p) printf("[%d %d]", p.x, p.y)
+#define PRINT_NEW_LINE printf("\n")
+
 typedef struct
 {
   int x;
   int y;
 } point;
+
+void print_curr_and_food_location(point, point);
 
 double find_distance(point, point);
 

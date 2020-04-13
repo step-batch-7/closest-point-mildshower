@@ -22,7 +22,7 @@ typedef struct
   int y;
 } point;
 
-void print_curr_and_food_location(point, point);
+void print_current_and_food_location(point, point);
 
 double find_distance(point, point);
 

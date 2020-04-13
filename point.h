@@ -15,6 +15,7 @@ Location of organism: [36 27],  Closest food target : [55 38]
 
 #define PRINT_POINT(p) printf("[%d %d]", p.x, p.y)
 #define PRINT_NEW_LINE printf("\n")
+#define FIRST_ELEMENT(arr) arr[0]
 
 typedef struct
 {
@@ -22,8 +23,10 @@ typedef struct
   int y;
 } point;
 
+typedef point *point_ptr;
+
 void print_current_and_food_location(point, point);
 
 double find_distance(point, point);
 
-void get_closest_food(point food_points[], int points_length, point current_location, point *closest_food_location);
+void get_closest_food(point food_points[], int points_length, point current_location, point_ptr closest_food_location);
